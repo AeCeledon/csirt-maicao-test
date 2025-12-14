@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #f5f7ff;
+  color: #0f1d2b;
+  min-height: 100vh;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold text-slate-900;
+  }
+
+  p {
+    @apply leading-relaxed text-slate-800;
+  }
+}
+
+.app-shell {
+  background: radial-gradient(circle at top, rgba(25, 163, 255, 0.25), transparent 48%),
+    #030710;
+}
+
+/* Tamaño específico para avatares del equipo */
+.avatar-size {
+  width: 9rem; /* 144px */
+  height: 12rem;
+}
