@@ -8,7 +8,7 @@
       "@data/*": ["src/data/*"],
       "@styles/*": ["src/styles/*"]
     },
-    "moduleResolution": "node16",
+    "moduleResolution": "bundler",
     "module": "Node16",
     "target": "ESNext",
     "jsx": "preserve",
