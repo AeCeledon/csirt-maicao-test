@@ -1,0 +1,25 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@data/*": ["src/data/*"],
+      "@styles/*": ["src/styles/*"]
+    },
+    "moduleResolution": "node16",
+    "module": "Node16",
+    "target": "ESNext",
+    "jsx": "preserve",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["astro/client"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
