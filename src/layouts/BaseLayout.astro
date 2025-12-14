@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import SpeedInsights from '@vercel/speed-insights/astro';
 
 const {
   title = 'CSIRT-MAICAO | Ciberseguridad para La Guajira',
@@ -23,5 +24,6 @@ const {
   </head>
   <body class="app-shell bg-[#030710] text-white antialiased">
     <slot />
+    <SpeedInsights />
   </body>
 </html>
