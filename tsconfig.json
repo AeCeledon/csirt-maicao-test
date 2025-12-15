@@ -9,7 +9,7 @@
       "@styles/*": ["src/styles/*"]
     },
     "moduleResolution": "bundler",
-    "module": "Node16",
+    "module": "esnext",
     "target": "ESNext",
     "jsx": "preserve",
     "strict": true,
