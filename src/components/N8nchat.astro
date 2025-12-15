@@ -1,0 +1,28 @@
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<!-- Pega aquí el script. IMPORTANTE: añade 'is:inline' -->
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://test-bot-ae.app.n8n.cloud/webhook/e42f2d35-a4ad-4fb5-863c-18e15571f9b7/chat',
+        // Opciones visuales (opcional)
+        mode: 'window', // o 'fullscreen'
+        target: '#n8n-chat',
+        i18n: {
+            en: { // Aunque dice 'en', sobreescribimos los textos por defecto
+                title: 'Soporte CSIRT-MAICAO', // Título de la ventana
+                subtitle: 'Ciberseguridad en La Guajira', // Subtítulo pequeño
+                footer: 'Potenciado por IA y talento local', // Pie de chat
+                getStarted: 'Nuevo Chat',
+                inputPlaceholder: 'Escribe tu consulta aquí...',
+            },
+        },
+        
+        // MENSAJE INICIAL DEL BOT
+        initialMessages: [
+            "¡Hola! 👋 Bienvenido a **CSIRT-MAICAO**. Protegemos el corazón digital del comercio en La Guajira. 🛡️",
+            "¿Buscas fortalecer la seguridad de tu empresa o reportar un incidente?"
+        ],
+	});
+</script>

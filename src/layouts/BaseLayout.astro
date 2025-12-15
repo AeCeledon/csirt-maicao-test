@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import  SpeedInsights  from '@vercel/speed-insights/astro';
-
+import N8nChat from '../components/N8nchat.astro';
 const {
   title = 'CSIRT-MAICAO | Ciberseguridad para La Guajira',
   description = 'Respuesta inmediata ante incidentes y defensa avanzada para el sector empresarial de La Guajira.',
@@ -25,5 +25,6 @@ const {
   <body class="app-shell bg-[#030710] text-white antialiased">
     <slot />
     <SpeedInsights />
+    <N8nChat />
   </body>
 </html>
